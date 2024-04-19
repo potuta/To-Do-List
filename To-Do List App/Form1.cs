@@ -86,11 +86,11 @@ namespace To_Do_List_App
                 }
             }
 
-            if (TDL_limit == 10)
+            if (TDL_limit == 20)
             {
                 addToListButton.Enabled = false;
                 textBox.Enabled = false;
-                textBox.Text = "Reached max limit of 10 lists";
+                textBox.Text = "Reached max limit of 20 lists";
             }
             else if (TDL_limit >= 0)
             {

@@ -121,6 +121,7 @@ namespace To_Do_List_App
             // 
             this.flowLayoutPanel.AutoScroll = true;
             this.flowLayoutPanel.AutoScrollMinSize = new System.Drawing.Size(3, 0);
+            this.flowLayoutPanel.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel.Location = new System.Drawing.Point(33, 163);
@@ -143,6 +144,7 @@ namespace To_Do_List_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(366, 536);
             this.Controls.Add(this.remove_Button);
             this.Controls.Add(this.flowLayoutPanel);
