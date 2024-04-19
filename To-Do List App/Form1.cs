@@ -71,6 +71,7 @@ namespace To_Do_List_App
                     {
                         panelArr.RemoveAt(i);
                         checkListArr.RemoveAt(i);
+                        buttonArr.RemoveAt(i);
                         flowLayoutPanel.Controls.RemoveAt(i);
                         TDL_limit--;
                     }
