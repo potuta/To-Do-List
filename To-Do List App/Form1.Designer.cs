@@ -160,6 +160,7 @@ namespace To_Do_List_App
             this.TDL_contextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Panel createPanel(string TDL_checkList)
