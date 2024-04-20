@@ -181,7 +181,7 @@ namespace To_Do_List_App
             buttonArr.Add(done_Button);
 
             TDL_checkBox.AutoSize = true;
-            TDL_checkBox.Font = new System.Drawing.Font("Segoe Print", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            TDL_checkBox.Font = new System.Drawing.Font("Segoe Print", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             TDL_checkBox.Location = new System.Drawing.Point(7, 7);
             TDL_checkBox.Name = "TDL_checkBox";
             TDL_checkBox.Size = new System.Drawing.Size(167, 42);
@@ -203,7 +203,6 @@ namespace To_Do_List_App
         }
 
         #endregion
-
         private int TDL_limit = 0;
         private List<Button> buttonArr = new List<Button>();
         private List<CheckBox> checkListArr = new List<CheckBox>();

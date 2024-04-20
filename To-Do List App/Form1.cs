@@ -16,6 +16,10 @@ namespace To_Do_List_App
         public TDL_Form()
         {
             InitializeComponent();
+
+            flowLayoutPanel.SuspendLayout();
+            flowLayoutPanel.ResumeLayout();
+            flowLayoutPanel.PerformLayout();
         }
 
         private void TDL_Form_Load(object sender, EventArgs e)
@@ -82,7 +86,7 @@ namespace To_Do_List_App
             {
                 if (clickedButton == buttonArr[i])
                 {
-                    checkListArr[i].Font = new Font("Segoe Print", 17F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point, ((byte)(0)));
+                    checkListArr[i].Font = new Font("Segoe Print", 15F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point, ((byte)(0)));
                 }
             }
 
