@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Deployment.Application;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,29 @@ namespace To_Do_List_App
         {
             MaximizeBox = false;
             checkUpdates();
+
+            TDL_List = File.ReadAllLines(TDL_Path).ToList();
+
+            if (TDL_List.Count > 0)
+            {
+                for (int i = 0; i < TDL_List.Count; i++)
+                {
+                    if (TDL_List[i].Contains('@'))
+                    {
+                        string temp = TDL_List[i].Replace("@", "");
+                        flowLayoutPanel.Controls.Add(createPanel(temp));
+                        checkListArr[i].Font = new Font("Segoe Print", 15F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point, ((byte)(0)));
+                        TDL_limit++;
+                    }
+                    else
+                    {
+                        flowLayoutPanel.Controls.Add(createPanel(TDL_List[i].ToString()));
+                        TDL_limit++;
+                    }
+                }
+            }
+
+            checkLimit();
         }
 
         private void TDL_notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -62,6 +86,8 @@ namespace To_Do_List_App
                 while(textBox.Text.Length > 0)
                 {
                     flowLayoutPanel.Controls.Add(createPanel(textBox.Text));
+                    TDL_List.Add(textBox.Text);
+                    File.WriteAllLines(TDL_Path, TDL_List);
                     TDL_limit++;
                     break;
                 }
@@ -77,6 +103,10 @@ namespace To_Do_List_App
                         checkListArr.RemoveAt(i);
                         buttonArr.RemoveAt(i);
                         flowLayoutPanel.Controls.RemoveAt(i);
+
+                        TDL_List.RemoveAt(i);
+                        File.WriteAllLines(TDL_Path, TDL_List);
+
                         TDL_limit--;
                     }
                 }
@@ -87,9 +117,17 @@ namespace To_Do_List_App
                 if (clickedButton == buttonArr[i])
                 {
                     checkListArr[i].Font = new Font("Segoe Print", 15F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point, ((byte)(0)));
+
+                    TDL_List[i] += "@";
+                    File.WriteAllLines(TDL_Path, TDL_List);
                 }
             }
 
+            checkLimit();
+        }
+
+        private void checkLimit()
+        {
             if (TDL_limit == 20)
             {
                 addToListButton.Enabled = false;
