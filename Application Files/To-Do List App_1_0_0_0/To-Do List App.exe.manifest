@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <asmv1:assemblyIdentity name="To-Do List App.exe" version="1.0.0.0" publicKeyToken="f19b8e4e7545c911" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="checklist-icon-one-set-web-icons-checklist-icon-one-set-web-icon-195898854.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="To-Do List App" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,17 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="To-Do List App.exe" size="7640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="To-Do List App.exe" size="51672">
       <assemblyIdentity name="To-Do List App" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nWYm+tKWK4iUWovAaifjvHQZkd/o5b7zWrJltXZKLWk=</dsig:DigestValue>
+        <dsig:DigestValue>YAnmpAxkUWQQs8Nzflca44H/7OTneoHrzRHoHH6cNF8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="checklist-icon-one-set-web-icons-checklist-icon-one-set-web-icon-195898854.ico" size="11510">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ivrrCRYCd+teNHiLIfMPzsv0WITwKdgLNbmG2LdfPnU=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="To-Do List App.exe.config" size="189">
     <hash>
       <dsig:Transforms>
@@ -60,6 +70,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ToDoList.txt" size="0">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
@@ -79,4 +98,4 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
-<publisherIdentity name="CN=DESKTOP-MQAI63D\cyy" issuerKeyHash="9d83cbab51c56915fcfa8e4f89ea0397196af17e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5xulRM/ohpfViMvriI+KVb150yK0G5g+0k4HoD54xLA=</DigestValue></Reference></SignedInfo><SignatureValue>J/PXyVbIDOkI7qlN8RggHLovsLwr9Va7fjD9Af5SVW0jw429c3XhhhJlyhdPuIXl8E6IoZ79uEB6i++QnPc2lIJ4Rbr87mVaeTTY+TUlrZTz5P8K6EyCrVPxpnk/Fr0DDFgLENRZWVwpTxrGgEf3FQPUSXN2tr0hZFK1HIhHsB8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>894G+lfyXZVTyHagAWjDK5ssBcNWeFkmkfB6bw2P9XAJeo9brugu90BDk+cv/TgwaOmK/Ha1vygIInuzQG8vtfnuhwXW25FWHKgsa6Gk2dSldDVL/PLFLDGYFCilTGUFw57+G8R8gcHWOmiK2oEGt63dBq6e1cwR70y0a6FbRQ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b0c4783ea0074ed23e981bb422d379bd558a8f88ebcb88d59786e8cf44a51be7" Description="" Url=""><as:assemblyIdentity name="To-Do List App.exe" version="1.0.0.0" publicKeyToken="f19b8e4e7545c911" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-MQAI63D\cyy</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+qrIqoV6rNdmLvaqLIHOpX2HEgXBtHPHAXoZlB6qThY=</DigestValue></Reference></SignedInfo><SignatureValue>CwbJynMCA6FLOllrzIfjDF688RWwNAFdlWTFH7qa4wj/bpBQjI54+yzS9JQaGAeKjPDGU0PfWG4dFAYcB9ZcjSEuxat2UAYUXbDlSzhs5/EqEMtMgUdofa6qgPQH6WZWXXeBDEyIhxScZTwPb57jOduMNiaI8jn3rMi7RdYlFYY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>894G+lfyXZVTyHagAWjDK5ssBcNWeFkmkfB6bw2P9XAJeo9brugu90BDk+cv/TgwaOmK/Ha1vygIInuzQG8vtfnuhwXW25FWHKgsa6Gk2dSldDVL/PLFLDGYFCilTGUFw57+G8R8gcHWOmiK2oEGt63dBq6e1cwR70y0a6FbRQ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQdEnUDRn3vIpJDaj9G4OafjANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAE0AUQBBAEkANgAzAEQAXABjAHkAeTAeFw0yNDA0MTQxMzE2MDBaFw0yNTA0MTQxOTE2MDBaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0ATQBRAEEASQA2ADMARABcAGMAeQB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDz3gb6V/JdlVPIdqABaMMrmywFw1Z4WSaR8HpvDY/1cAl6j1uu6C73QEOT5y/9ODBo6Yr8drW/KAgie7NAby+1+e6HBdbbkVYcqCxroaTZ1KV0NUv88sUsMZgUKKVMZQXDnv4bxHyBwdY6aIragQa3rd0Grp7VzBHvTLRroVtFDQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBANZJsweUjdxE/NoDUWPFoeo26mFqHWQAAgU8gC7EF2t7tfisoTd6D1eUtZ3WGQNwslUSqMmO2Ks+SubtUvJDU4iUNfQW7DnCkJfhHKwv1b5BQ6424MBGvHaTA7u+N5DSgpCyUkvD4SqECzE4AinH3ooHJ55Td0t3tUvbNkS4D1P9</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=DESKTOP-MQAI63D\cyy" issuerKeyHash="9d83cbab51c56915fcfa8e4f89ea0397196af17e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5j9KRWmVcbZpDFdPdq7hM07mv+VY2EUemNDpfWEqT+A=</DigestValue></Reference></SignedInfo><SignatureValue>RUoI0Wj7kTFXBOosnu2WGVjSjc+m4v+NxHXa1eQ5bVIlrAK1pgBQoSx0sbWJP8uYSUB+GHsi4dWsSq17xoDXaVDCPXFLdM0PnqGpeWuyAvqFpJhEfgJPWqWJpl+XVUXHR3H6wtp7qg/Yk9bHUzBQPSldmHq5JWbtb4LVKCFjCzA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>894G+lfyXZVTyHagAWjDK5ssBcNWeFkmkfB6bw2P9XAJeo9brugu90BDk+cv/TgwaOmK/Ha1vygIInuzQG8vtfnuhwXW25FWHKgsa6Gk2dSldDVL/PLFLDGYFCilTGUFw57+G8R8gcHWOmiK2oEGt63dBq6e1cwR70y0a6FbRQ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e04f2a617de9d0981e45d858e5bfe64e33e1ae764f570c69b6719569454a3fe6" Description="" Url=""><as:assemblyIdentity name="To-Do List App.exe" version="1.0.0.0" publicKeyToken="f19b8e4e7545c911" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-MQAI63D\cyy</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qDSYY/p57RuiPBgF/XlP8qPb8fQNZvcsClAIQQtt5FI=</DigestValue></Reference></SignedInfo><SignatureValue>Jak3sH1yjSM/+xucXKJ2Va8CWsQyz8TnRrTGV3fvwToiklJEL2B0IstQT94wZ9TKaWlohJwl09tJbCp3mEQTObWx6qzHorN/Q5j6QE8NsClj07hdfHxvijc932fwhLMWtZyW1EX/pPgogrtwy526ije5BEKGiR0UoQ3uGdf8e9Y=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>894G+lfyXZVTyHagAWjDK5ssBcNWeFkmkfB6bw2P9XAJeo9brugu90BDk+cv/TgwaOmK/Ha1vygIInuzQG8vtfnuhwXW25FWHKgsa6Gk2dSldDVL/PLFLDGYFCilTGUFw57+G8R8gcHWOmiK2oEGt63dBq6e1cwR70y0a6FbRQ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQdEnUDRn3vIpJDaj9G4OafjANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAE0AUQBBAEkANgAzAEQAXABjAHkAeTAeFw0yNDA0MTQxMzE2MDBaFw0yNTA0MTQxOTE2MDBaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0ATQBRAEEASQA2ADMARABcAGMAeQB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDz3gb6V/JdlVPIdqABaMMrmywFw1Z4WSaR8HpvDY/1cAl6j1uu6C73QEOT5y/9ODBo6Yr8drW/KAgie7NAby+1+e6HBdbbkVYcqCxroaTZ1KV0NUv88sUsMZgUKKVMZQXDnv4bxHyBwdY6aIragQa3rd0Grp7VzBHvTLRroVtFDQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBANZJsweUjdxE/NoDUWPFoeo26mFqHWQAAgU8gC7EF2t7tfisoTd6D1eUtZ3WGQNwslUSqMmO2Ks+SubtUvJDU4iUNfQW7DnCkJfhHKwv1b5BQ6424MBGvHaTA7u+N5DSgpCyUkvD4SqECzE4AinH3ooHJ55Td0t3tUvbNkS4D1P9</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
