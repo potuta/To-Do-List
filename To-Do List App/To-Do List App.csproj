@@ -134,7 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="checklist-icon-one-set-web-icons-checklist-icon-one-set-web-icon-195898854.ico" />
-    <Content Include="ToDoList.txt" />
+    <Content Include="ToDoList.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
