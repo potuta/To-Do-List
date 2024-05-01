@@ -14,6 +14,7 @@ namespace To_Do_List_App
 {
     public partial class TDL_Form : Form
     {
+
         public TDL_Form()
         {
             InitializeComponent();
@@ -27,8 +28,8 @@ namespace To_Do_List_App
         {
             MaximizeBox = false;
             checkUpdates();
-
             TDL_List = File.ReadAllLines(TDL_Path).ToList();
+
 
             if (TDL_List.Count > 0)
             {

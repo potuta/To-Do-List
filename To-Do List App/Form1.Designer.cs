@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace To_Do_List_App
@@ -204,7 +206,7 @@ namespace To_Do_List_App
 
         #endregion
         private int TDL_limit = 0;
-        private string TDL_Path = @"C:\Users\cyy\Desktop\coding\c#\To-Do List Application\To-Do List App\To-Do List App\ToDoList.txt";
+        private string TDL_Path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"C:\\Users\\cyy\\Desktop\\coding\\c#\\To-Do List Application\\To-Do List App\\To-Do List App\\ToDoList.txt");
         private List<string> TDL_List = new List<string>();
         private List<Button> buttonArr = new List<Button>();
         private List<CheckBox> checkListArr = new List<CheckBox>();
