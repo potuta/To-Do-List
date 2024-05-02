@@ -14,6 +14,7 @@ namespace To_Do_List_App
 {
     public partial class TDL_Form : Form
     {
+
         public TDL_Form()
         {
             InitializeComponent();
@@ -27,28 +28,7 @@ namespace To_Do_List_App
         {
             MaximizeBox = false;
             checkUpdates();
-
-            TDL_List = File.ReadAllLines(TDL_Path).ToList();
-
-            if (TDL_List.Count > 0)
-            {
-                for (int i = 0; i < TDL_List.Count; i++)
-                {
-                    if (TDL_List[i].Contains('@'))
-                    {
-                        string temp = TDL_List[i].Replace("@", "");
-                        flowLayoutPanel.Controls.Add(createPanel(temp));
-                        checkListArr[i].Font = new Font("Segoe Print", 15F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point, ((byte)(0)));
-                        TDL_limit++;
-                    }
-                    else
-                    {
-                        flowLayoutPanel.Controls.Add(createPanel(TDL_List[i].ToString()));
-                        TDL_limit++;
-                    }
-                }
-            }
-
+            checkSaveList();
             checkLimit();
         }
 
@@ -142,6 +122,56 @@ namespace To_Do_List_App
             }
         }
 
+        private void checkSaveList()
+        {
+            if (ApplicationDeployment.IsNetworkDeployed)
+            {
+                TDL_List = File.ReadAllLines(TDL_Path).ToList();
+
+                if (TDL_List.Count > 0)
+                {
+                    for (int i = 0; i < TDL_List.Count; i++)
+                    {
+                        if (TDL_List[i].Contains('@'))
+                        {
+                            string temp = TDL_List[i].Replace("@", "");
+                            flowLayoutPanel.Controls.Add(createPanel(temp));
+                            checkListArr[i].Font = new Font("Segoe Print", 15F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point, ((byte)(0)));
+                            TDL_limit++;
+                        }
+                        else
+                        {
+                            flowLayoutPanel.Controls.Add(createPanel(TDL_List[i].ToString()));
+                            TDL_limit++;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                TDL_Path = @"C:\Users\cyy\Desktop\coding\c#\To-Do List Application\To-Do List App\To-Do List App\ToDoList.txt";
+                TDL_List = File.ReadAllLines(TDL_Path).ToList();
+
+                if (TDL_List.Count > 0)
+                {
+                    for (int i = 0; i < TDL_List.Count; i++)
+                    {
+                        if (TDL_List[i].Contains('@'))
+                        {
+                            string temp = TDL_List[i].Replace("@", "");
+                            flowLayoutPanel.Controls.Add(createPanel(temp));
+                            checkListArr[i].Font = new Font("Segoe Print", 15F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point, ((byte)(0)));
+                            TDL_limit++;
+                        }
+                        else
+                        {
+                            flowLayoutPanel.Controls.Add(createPanel(TDL_List[i].ToString()));
+                            TDL_limit++;
+                        }
+                    }
+                }
+            }
+        }
         private void checkUpdates()
         {
             UpdateCheckInfo info;
