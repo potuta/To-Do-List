@@ -172,6 +172,7 @@ namespace To_Do_List_App
                 }
             }
         }
+
         private void checkUpdates()
         {
             UpdateCheckInfo info;
